@@ -2,11 +2,6 @@ import pandas as pd
 
 df = pd.read_excel("C:/Users/Usuario/Desktop/Escriotrio Nico/PYTHON/PRACTICA_MIERCOLES/Analisis1/Ventas.xlsx")
 
-
-
-
-
-
 df_grouped_ubicacion = df.groupby("Ubicación Clave")["Ventas"].sum()
 print(df_grouped_ubicacion.head(5)) #Muestra la suma total de ventas por ubicación.
 
